@@ -3,8 +3,7 @@ package edu.toronto.csc207;
 /**
  * A user with a username and password.
  *
- * IMPORTANT: We are ignoring password encryption in this example.
- * Take a security course for this, like CSC367.
+ * IMPORTANT: We are ignoring password encryption in this example. (See CSC209.)
  */
 public class User {
 
@@ -30,6 +29,11 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * Return whether the password parameter matches this user's password.
+     * @param password the password guess
+     * @return whether the guess matches the real password.
+     */
     public boolean passwordMatches(String password) {
         return this.password.equals(password);
     }
